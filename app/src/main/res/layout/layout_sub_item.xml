@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addworkoutcardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/structurespinner"
+        android:padding="5dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/structurespinner"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/workoutname"/>
+
+            <EditText
+                android:id="@+id/workoutname"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginEnd="19dp"
+                android:ems="10"
+                android:layout_marginRight="19dp" />
+
+            <Spinner
+                android:id="@+id/unitspinner"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="7dp"
+                android:layout_toRightOf="@+id/number"
+                android:entries="@array/workoutUnit"
+                android:layout_toEndOf="@+id/number"
+                android:layout_marginLeft="7dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

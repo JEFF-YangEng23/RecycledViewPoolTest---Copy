@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RecycledViewPool Test</string>
+
+    <string-array name="workoutUnit">
+        <item>secs</item>
+        <item>reps</item>
+    </string-array>
+
+    <string-array name="workoutStructure">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+
+    <string-array name="workoutType">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+    </string-array>
+
+
+</resources>
